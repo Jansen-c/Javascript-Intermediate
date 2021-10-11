@@ -1,0 +1,10 @@
+1 Apa itu localStorage? 
+Penyimpanan lokal pada browser kita dengan  memori yang kecil, biasanya dibawah 10 mb dan disimpan di web pada pengguna, akibatnya jika browser 
+ditutup atau di refresh maka memori yang tersimpan tidak akan hilang. 
+
+Apa itu cookies? 
+Penyimpanan lokal pada browser juga namun ukuran yang sangat kecil biasanya berukuran 4 kb, disimpan di web pengguna, isi nya hanya berupa informasi penting dari pengguna,
+seprti preferensi makan dan lain lain. 
+
+Apa perbedaan antara localStorage dan sessionStorage?
+Local storage akan menjaga memori selama nilai di dalamnya tidak dihapus, sedangkan sessionStorage akan hilang memori di dalamnya jika browser ditutup. 
