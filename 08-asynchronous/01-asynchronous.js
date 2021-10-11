@@ -4,6 +4,7 @@
 // 3. Bisa, meskipun yang saya baru coba hanya chrome 
 // 4. first log dari 1 sampai 5, sedangkan untuk second log semua nya hasilnya 6 sebanyak 5 kali. 
 // 5. Karena setTimeout tidak berjalan sampai for loop selesai dieksekusi, sehingga console.log() nya menjadi berbeda. 
+// 6. yang benar seperti ini, karena let tidak berjalan di luar scope nya sehingga pada second log nilai i nya bernilai dari 1 sampai 5 lagi.
 
 for (let i = 1; i <= 5; i++) {
     console.log("first log: ", i); 

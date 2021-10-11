@@ -1,21 +1,17 @@
 const isR18Plus = (age) => {
     
-    const promiseA = new Promise((resolutionFunc) => {
-        
-        if(age>18) {
-            setTimeout(() => {
-                resolutionFunc("anda sudah dewasa")   
-            }, 1000);
-            
-        }
-        else {
-            setTimeout(() => {
-                resolutionFunc("anda masih dibawah umur") 
-            }, 1000);
-        }
-    })
+    const hasilPromise = new Promise((resolutionFunc) => {
+    if(age>18) {
+        setTimeout(() => {
+            resolutionFunc("anda sudah dewasa")   
+        }, 1000);}
+    else {
+        setTimeout(() => {
+            resolutionFunc("anda masih dibawah umur") 
+        }, 1000);
+    }})
 
-return promiseA;
+return hasilPromise;
 }
 
 const printR18Plus = async () => {
