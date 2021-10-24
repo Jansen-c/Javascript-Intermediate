@@ -113,12 +113,22 @@
         event.preventDefault();
         /* gada id jadi pake ini */
         const usernameFromInput = event.target['username'].value;
+
+        
+
         console.log( event.target['username'].value)
+        
+        // bisa liat dibawah, pake dom nya terus [] isinya namanya baru apa value nya 
+        console.log(elFormUsername["username"].value);
+
           if (usernameFromInput) {
           sessionStorage.setItem("username", usernameFromInput );
           loggedInHeader(usernameFromInput)
           }}
       
+
+
+        
     </script>
 
     <script

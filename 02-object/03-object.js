@@ -89,8 +89,9 @@ const items = [
   
   const cuan = new Object();
   cuan.btc = xx ;
-  cuan.eth = yy;
   cuan.doge = zz;
+  cuan.eth = yy;
+ 
   // console.log(cuan)
   
   

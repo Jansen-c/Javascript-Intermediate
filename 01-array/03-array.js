@@ -4,28 +4,17 @@ const arr = [
     [2, 8],
   ];
   
-  let output = [];
-  function searchInArray(value,nilai) {
-    value.forEach((baris) => {
-    baris.forEach((kolom) => {
-      output.push(kolom);});
-    });
-  
-    function checkApakahAda(val) {
-      if (val == nilai){
-        return true
-      }
-      else{
-        return false
-      }
-    }
-    let k = output.find(checkApakahAda)
-    return output.indexOf(k) 
-  // console.log(output)
-  // return k
-  }
-  
-  console.log(searchInArray(arr, 3));
-  console.log(searchInArray(arr, 2));
-  console.log(searchInArray(arr, 4));
-  console.log(searchInArray(arr, 8));
+  let arrayKosong = []
+  function searchInArray(value, nilai) {  
+    let dataBaru = arrayKosong.concat(...value)
+
+    for(let i = 0; i < dataBaru.length; i++){
+        if(dataBaru[i] == nilai)
+            return i }
+    return null}
+
+console.log(searchInArray(arr, 3));
+console.log(searchInArray(arr, 2));
+console.log(searchInArray(arr, 4));
+console.log(searchInArray(arr, 8));
+

@@ -1,7 +1,7 @@
 const getGitHubUser = async(username) => {
     try {
         if (username == "") {
-            return undefined
+            return null
         }
         const users = await fetch(`https://api.github.com/users/${username}`)
         const json = await users.json()

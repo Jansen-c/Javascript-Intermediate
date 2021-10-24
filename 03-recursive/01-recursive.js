@@ -55,7 +55,7 @@ function searchInArray(arr, number) {
     else if (panjangArr === 0) {
         return "angka tidak ditemukan";
     }
-    console.log(arr)
+    // console.log(arr)
     return searchInArray(arr.slice(1), number); // motong awal dari arr, terus lanjut aja
 }
 
@@ -77,7 +77,7 @@ function trianglePattern(x, y) {
             spasiBuatSegitiga += String.fromCharCode(64 + (y - x + (i - x) + 2))
         }
     }
-    console.log(space)
+    console.log(spasiBuatSegitiga)
     trianglePattern(x - 1, y)
 }
 

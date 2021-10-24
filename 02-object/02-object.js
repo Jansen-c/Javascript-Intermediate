@@ -7,7 +7,11 @@ function getObjectValue(object,string) {
       chunk[i] = x.splice(0,1)
     }
     // console.log(chunk)
-    return (object[chunk[0]][chunk[1]][chunk[2]])
+    let xx = object[chunk[0]][chunk[1]][chunk[2]]
+    if(xx == undefined){
+      return xx = null;
+    }
+    return (xx)
   }
   
   const milkBasedCoffee = {
